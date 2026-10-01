@@ -1,0 +1,27 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: mjishnu.raven
+PackageVersion: 1.1.2.0
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: Raven.exe
+  PortableCommandAlias: raven
+InstallModes:
+- silent
+- silentWithProgress
+UpgradeBehavior: uninstallPrevious
+ReleaseDate: 2026-10-01
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/mjishnu/Raven/releases/download/v1.1.2.0/Raven-v1.1.2.0-win-x86-self-contained.zip
+  InstallerSha256: 21C8C1961BB9D7624FD98892121448801098D1755AFB6AA916EB78A158E9FC06
+- Architecture: x64
+  InstallerUrl: https://github.com/mjishnu/Raven/releases/download/v1.1.2.0/Raven-v1.1.2.0-win-x64-self-contained.zip
+  InstallerSha256: E8CF8CB1545B11542B9067A3D85B396FB746B2B84561F8D6CD08C658A8755E09
+- Architecture: arm64
+  InstallerUrl: https://github.com/mjishnu/Raven/releases/download/v1.1.2.0/Raven-v1.1.2.0-win-arm64-self-contained.zip
+  InstallerSha256: 32AE82E36D03B5126CE288B1B12DC2FA3DD5ECE4D8FA0C73485D09D0AB4D05C5
+ManifestType: installer
+ManifestVersion: 1.12.0
